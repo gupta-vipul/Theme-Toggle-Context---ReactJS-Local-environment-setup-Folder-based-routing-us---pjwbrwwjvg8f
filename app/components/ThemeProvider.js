@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 const ThemeContext = React.createContext()
 const ThemeProvider = (props) =>{
 
-    const [isDarkTheme, setIsDarkTheme] = useState(true);
+    const [isDarkTheme, setIsDarkTheme] = useState(false);
     return (
         <React.Fragment>
             <ThemeContext.Provider value ={{isDarkTheme, setIsDarkTheme}}>
